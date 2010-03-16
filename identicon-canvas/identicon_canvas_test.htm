@@ -1,0 +1,37 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Identicon Canvas Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="identicon_canvas.js"></script>
+</head>
+<body onload="render_identicon_canvases('identicon ')">
+	<h2>Client-side Canvas-based Identicons</h2> 
+	<canvas title="identicon -2044886870" width="15" height="15"></canvas>
+	<canvas title="identicon -2044886870" width="21" height="21"></canvas>
+	<canvas title="identicon -2044886870" width="30" height="30"></canvas>
+	<canvas title="identicon -2044886870" width="48" height="48"></canvas>
+	<h2>Server-side Rend and Scale Identicons</h2> 
+	<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=15" width=15 height=15>
+	<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=21" width=21 height=21>
+	<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=30" width=30 height=30>
+	<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=48" width=48 height=48>
+	<h2>Client-side Canvas-based Identicons with Fallback to Server-Side *</h2>
+	<canvas title="identicon -2044886870" width="15" height="15">
+		<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=15" width=15 height=15>
+	</canvas>
+	<canvas title="identicon -2044886870" width="21" height="21">
+		<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=21" width=21 height=21>
+	</canvas>
+	<canvas title="identicon -2044886870" width="30" height="30">
+		<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=30" width=30 height=30>
+	</canvas>
+	<canvas title="identicon -2044886870" width="48" height="48">
+		<img src="http://www.docuverse.com/blog/9block?code=-2044886870&amp;size=48" width=48 height=48>
+	</canvas>
+	<p><i>* Safari will display both because it ignores canvas end tags</i></p>
+</body>
+</html>
