@@ -1,3 +1,4 @@
+### License
 ```
 (The MIT License)
 
@@ -22,3 +23,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+### Alternate Versions
+
+This project exists for archival purpose.
+To see the code running, I recommend [Mavenized version](https://github.com/pauloubuntu/identicon) by [@pauloubuntu](https://github.com/pauloubuntu).
