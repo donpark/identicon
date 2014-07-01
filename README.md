@@ -27,3 +27,20 @@ Identicon
         CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
         TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+###Compiling and Running it
+
++ On root path run this:
+
+        mvn clean install
+
++ To run the example webapp run this in /webappexample folder
+
+        mvn clean compile package tomcat7:run -Ptomcat
+
++ Example Urls
+
+        http://localhost:8080/9block?code=-2034984870&size=64
+        http://localhost:8080/9block?code=-2034954870&size=64
+        http://localhost:8080/9block?code=-2034894870&size=64
+        
