@@ -11,6 +11,22 @@
 
     <artifactId>webappexample</artifactId>
     <packaging>war</packaging>
+    <description>
+        identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy.
+        This is a web application implementing core module using a Servlet with example purposes only.
+    </description>
+    <developers>
+        <developer>
+            <name>Don Park</name>
+            <email>donpark@docuverse.com</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Paulo Miguel Almeida Rodenas</name>
+            <email>paulo.ubuntu@gmail.com</email>
+        </contributor>
+    </contributors>
 
     <dependencies>
 

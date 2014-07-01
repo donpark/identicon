@@ -10,12 +10,31 @@
     </modules>
     <packaging>pom</packaging>
 
+    <name>identicon</name>
+    <description>
+        identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy.
+    </description>
+    <developers>
+        <developer>
+            <name>Don Park</name>
+            <email>donpark@docuverse.com</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Paulo Miguel Almeida Rodenas</name>
+            <email>paulo.ubuntu@gmail.com</email>
+        </contributor>
+    </contributors>
+
+
     <properties>
-        <configuration.source>1.6</configuration.source>
-        <configuration.target>1.6</configuration.target>
+        <configuration.source>1.7</configuration.source>
+        <configuration.target>1.7</configuration.target>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
 
     <build>
         <plugins>
