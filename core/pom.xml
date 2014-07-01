@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>identicon</artifactId>
+        <groupId>com.github.donpark.identicon</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>core</artifactId>
+    <description>
+        identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy.
+        This is the core package and can be implemented on a standalone application as well as web application.
+    </description>
+    <developers>
+        <developer>
+            <name>Don Park</name>
+            <email>donpark@docuverse.com</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Paulo Miguel Almeida Rodenas</name>
+            <email>paulo.ubuntu@gmail.com</email>
+        </contributor>
+    </contributors>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.cache2k</groupId>
+            <artifactId>cache2k-api</artifactId>
+            <version>0.19.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cache2k</groupId>
+            <artifactId>cache2k-core</artifactId>
+            <version>0.19.1</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

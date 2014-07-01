@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.donpark.identicon</groupId>
+    <artifactId>identicon</artifactId>
+    <version>1.0</version>
+    <modules>
+        <module>core</module>
+        <module>webappexample</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>identicon</name>
+    <description>
+        identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy.
+    </description>
+    <developers>
+        <developer>
+            <name>Don Park</name>
+            <email>donpark@docuverse.com</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Paulo Miguel Almeida Rodenas</name>
+            <email>paulo.ubuntu@gmail.com</email>
+        </contributor>
+    </contributors>
+
+
+    <properties>
+        <configuration.source>1.7</configuration.source>
+        <configuration.target>1.7</configuration.target>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>${configuration.source}</source>
+                    <target>${configuration.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

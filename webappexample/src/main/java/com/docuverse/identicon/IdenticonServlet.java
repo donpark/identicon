@@ -1,18 +1,19 @@
 package com.docuverse.identicon;
 
-import java.awt.image.RenderedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import java.awt.image.RenderedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 /**
  * This servlet generates <i>identicon</i> (visual identifier) images ranging
@@ -49,6 +50,14 @@ import org.apache.commons.logging.LogFactory;
  * 
  * @author don
  */
+@WebServlet(name="IdenticonServlet",
+        urlPatterns={"/9block"},
+        loadOnStartup = 1,
+        initParams = {
+                @WebInitParam(name="version", value="1"),
+                @WebInitParam(name="inetSalt", value="1321321321321321"),
+                @WebInitParam(name="cacheProvider", value="com.docuverse.identicon.MemoryIdenticonCache"), //Optional
+        })
 public class IdenticonServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -3507466186902317988L;
