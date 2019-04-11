@@ -176,7 +176,7 @@ public class NineBlockIdenticonRenderer implements IdenticonRenderer {
 		// bit 8-9: corner turns
 		// bit 10-13: side patch type
 		// bit 14: side invert
-		// bit 15: corner turns
+		// bit 15: side turns
 		// bit 16-20: blue color component
 		// bit 21-26: green color component
 		// bit 27-31: red color component
